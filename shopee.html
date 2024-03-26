@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Shopee</title>
+    <style>
+        body{
+            height: 200vh;
+        }
+        
+        .item1{grid-area:menu;}
+        .item2{grid-area:main;}
+        .item3{grid-area:right;}
+
+        nav{
+            position: sticky;
+            top: 0;
+            height: 150px;
+            background-color: orangered;
+        }
+        nav a{
+            padding: 0 10px;
+            font-size: 15px;
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        form input[type=submit]{
+            height: 36px;
+            width: 36px;
+            border-radius: 18px;
+            background-color: orange;
+            border: none;
+            cursor: pointer;
+            
+        }
+        form input[type=text]{
+            border: none;
+            height: 30px;
+            width: 250px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            height: 250px;
+            width: 98%;
+            display: grid;
+            grid-template-areas:
+            'menu menu menu menu main main'
+            'menu menu menu menu right right';
+            gap: 10px;
+            /* background-color: orangered; */
+           
+        }
+        .container > div{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        .item1{
+            background-image: url(1a.jpeg);
+            background-size:cover ;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        .item2{
+            background-image: url(1b.png);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        .item3{
+            background-image: url(1c.jpeg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        .search{
+            display: block;
+            margin-left:470px ;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Seller Centre</a>
+        <a href="#">Download</a>
+        <a href="#">
+            Follow us on
+            <a href="#">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-youtube'></i>
+            </a>
+        </a>
+        <form action="https://www.google.com/search" target="_blank">
+            <div class="search">
+                <input type="text" name="q" id="" placeholder="search here">
+                <input type="submit" value="🔍">
+            </div>
+        </form>
+    </nav>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+</body>
+</html>
